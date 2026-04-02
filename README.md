@@ -1,25 +1,25 @@
 "# selection_interview" 
 
+# FOSS Club Tech Team Challenge 2026
+
 ## Submitted by
 Aavani U B
 
 ---
 
 ## Project Overview
-This project is developed as part of the **FOSS Club Tech Team Challenge 2026**.
-
-The website is designed to showcase upcoming technical events conducted by the FOSS Club. It provides a clean and modern interface where users can explore events, view details, and access a contact section.
+This project is developed as part of the FOSS Club Tech Team Challenge 2026. The task was to enhance an existing website template by adding new sections, improving layout, and implementing navigation functionality.
 
 ---
 
 ## Features Implemented
 
-- Added a complete **Contact Section**
-- Created **4+ Event Cards**, each with an image
+- Added a **Contact Section**
+- Added **4 Event Cards** with images
 - Used **CSS Grid** for proper alignment of cards
-- Implemented **Register button redirection** to a separate page
-- Designed a clean and responsive UI
-- Added smooth scrolling and animations using AOS
+- Implemented **Register Button Redirection** to a new page
+- Created a separate page displaying:
+  "Registrations will be opening soon"
 
 ---
 
@@ -27,12 +27,12 @@ The website is designed to showcase upcoming technical events conducted by the F
 
 ### 1. Fork the Repository
 - Navigate to the official repository  
-- Click on the **Fork** button to create a copy in your GitHub account  
+- Click the **Fork** button to create a copy in your GitHub account  
 
 ---
 
 ### 2. Clone to Your Local System
 
 ```bash
-git clone https://github.com/Aavani142/tech_interview_2026.git
+git clone https://github.com/your-username/tech_interview_2026.git
 cd tech_interview_2026
