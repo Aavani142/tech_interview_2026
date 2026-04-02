@@ -1,6 +1,4 @@
-"# selection_interview" 
-
-# FOSS Club Tech Team Challenge 2026
+# selection_interview
 
 ## Submitted by
 Aavani U B
