@@ -1,31 +1,119 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FOSS Club Events</title>
+  <title>FOSS Club</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+  <h1>FOSS Club <span>.</span></h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <header>
-    <h1>FOSS Club</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Events</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<section class="cta">
+  <h2>Build. Collaborate. Contribute.</h2>
+  <p>Join our community and explore upcoming sessions designed for developers</p>
+  <button onclick="scrollToEvents()">Explore Events</button>
+</section>
 
-    <h2>Upcoming Events</h2>
+<section id="events" class="events">
+  <h2 data-aos="fade-up">Upcoming Events</h2>
 
+  <div class="card-container">
 
-      <div class="card">
-        <h3>GIT HUB Basics</h3>
+    <div class="card" data-aos="zoom-in">
+      <img src="images/github.jpg" alt="">
+      <div class="card-content">
+        <h3>GitHub Basics</h3>
         <p class="date">April 10, 2026</p>
-        <p>Learn basics of GIT HUB</p>
-        <button>Register</button>
+        <p>Understand version control and collaboration workflows</p>
+        <button onclick="location.href='register.html'">Register</button>
       </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+      <img src="images/webdev.jpg" alt="">
+      <div class="card-content">
+        <h3>Web Development</h3>
+        <p class="date">April 15, 2026</p>
+        <p>Learn HTML, CSS and JavaScript fundamentals</p>
+        <button onclick="location.href='register.html'">Register</button>
+      </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="images/hackathon.jpg" alt="">
+      <div class="card-content">
+        <h3>Hackathon</h3>
+        <p class="date">April 20, 2026</p>
+        <p>Build real projects in a 24-hour challenge</p>
+        <button onclick="location.href='register.html'">Register</button>
+      </div>
+    </div>
+
+    <div class="card" data-aos="zoom-in" data-aos-delay="300">
+      <img src="images/OIP.webp" alt="">
+      <div class="card-content">
+        <h3>Open Source Meetup</h3>
+        <p class="date">April 25, 2026</p>
+        <p>Collaborate and contribute to open source projects</p>
+        <button onclick="location.href='register.html'">Register</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="contact-wrapper">
+
+    <div class="contact-info" data-aos="fade-right">
+      <h2>Get in touch</h2>
+      <p><strong>Email:</strong><br> fossclub@gmail.com</p>
+      <p><strong>Phone:</strong><br> +91 9876543210</p>
+      <p><strong>Address:</strong><br>
+        LBS Institute of Technology<br>
+        Thiruvananthapuram, Kerala
+      </p>
+    </div>
+
+    <div class="contact-form" data-aos="fade-left">
+      <form>
+        <div class="row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email address" required>
+        </div>
+
+        <textarea placeholder="Write your message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 FOSS Club. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 900, once: true });
+
+  function scrollToEvents() {
+    document.getElementById("events").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
 
 </body>
 </html>
